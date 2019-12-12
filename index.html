@@ -27,7 +27,7 @@
 
   <!-- JS
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+    <script src="js/main.js"></script>
 
   <!-- Favicon
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,10 +46,10 @@
 
   					<h1 class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white-90">Jayathissa Yoga</h1>
   					<div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-  						<a class="link dim white f5 f3-l dib mr3 mr4-l" href="#id-courses" title="Home">Courses</a>
-  						<a class="link dim white f5 f3-l dib mr3 mr4-l" href="#id-about" title="How it Works">About</a>
-  						<a class="link dim white f5 f3-l dib mr3 mr4-l" href="#id-talks" title="Blog">Thoughts</a>
-  						<a class="link dim white f5 f3-l dib" href="#" title="Contact">Contact</a>
+  						<a class="link dim white f5 f3-l dib mr3 mr4-l" onclick="scrollSmoothly('#id-courses')" title="Home">Courses</a>
+  						<a class="link dim white f5 f3-l dib mr3 mr4-l" onclick="scrollSmoothly('#id-about')" title="How it Works">About</a>
+  						<a class="link dim white f5 f3-l dib mr3 mr4-l" onclick="scrollSmoothly('#id-talks')" title="Blog">Thoughts</a>
+  						<a class="link dim white f5 f3-l dib" href="#" title="Contact"></a>
   					</div>
   				</nav> 
        </div>
@@ -57,9 +57,10 @@
    </header>
 
    <section class="avenir" id="id-courses">
+
     <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Foundational</h1>
     <div class="tc pa4 flex-l justify-center">
-     <div class = "ph3 pv3" onclick="document.getElementById('breath-modal').style.display='block'">
+     <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('breath-modal').style.display='block'">
       <!-- <img src="img/heart.svg" class="br-100 pa1 ba b--black-10 h3 w3" alt="avatar"> -->
       <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 
@@ -71,7 +72,7 @@
       <svg>
       <div class = "f2 fw3">Breathing</div>
     </div>
-    <div class = "ph3 pv3" onclick="document.getElementById('mind-body-modal').style.display='block'">
+    <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('mind-body-modal').style.display='block'">
       <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <g >
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
@@ -81,7 +82,7 @@
       <svg>
           <div class = "f2 fw3">Mind-Body Connection</div>
     </div>
-    <div class = "ph3 pv3" onclick="document.getElementById('consciousness-modal').style.display='block'">
+    <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('consciousness-modal').style.display='block'">
       <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <g >
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
@@ -91,7 +92,7 @@
       <svg>
       <div class = "f2 fw3">Realms of Consciousness</div>
     </div>
-    <div class = "ph3 pv3" onclick="document.getElementById('yielding-modal').style.display='block'">
+    <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('yielding-modal').style.display='block'">
       <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <g >
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
@@ -132,49 +133,49 @@
 
         </g>
 
-        <g transform="translate(50 37)" onclick="document.getElementById('heart-modal').style.display='block'">
+        <g class = "dim pointer" transform="translate(50 37)" onclick="document.getElementById('heart-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
           <text x = "10", y="2" text-anchor="left" font-family="avenir" font-size="6" fill="black" font-weight="30">Heart</text>
           <image x="0" y="0" width="8" height="8" transform="translate(-4 -4)" xlink:href="img/heart.svg" />
         </g>
 
-        <g transform="translate(55 50)" onclick="document.getElementById('kidneys-modal').style.display='block'">
+        <g class = "dim pointer" transform="translate(55 50)" onclick="document.getElementById('kidneys-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
           <text x = "10", y="2" text-anchor="left" font-family="avenir" font-size="6" fill="black" font-weight="30">Kidneys</text>
           <image x="0" y="0" width="8" height="8" transform="translate(-4 -4)" xlink:href="img/kidneys.svg" />
         </g>
 
-        <g transform="translate(50 105)" onclick="document.getElementById('grounding-modal').style.display='block'">
+        <g class = "dim pointer" transform="translate(50 105)" onclick="document.getElementById('grounding-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
           <text x = "10", y="2" text-anchor="left" font-family="avenir" font-size="6" fill="black" font-weight="30">Grounding</text>
           <image x="0" y="0" width="8" height="8" transform="translate(-4 -4)" xlink:href="img/ground.svg" />
         </g>
 
-        <g transform="translate(70 80)" onclick="document.getElementById('space-modal').style.display='block'">
+        <g class = "dim pointer" transform="translate(70 80)" onclick="document.getElementById('space-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
           <text x = "10", y="2" text-anchor="left" font-family="avenir" font-size="6" fill="black" font-weight="30">Space</text>
           <image x="0" y="0" width="8" height="8" transform="translate(-4 -4)" xlink:href="img/space.svg" />
         </g>
 
-        <g transform="translate(20 10)" onclick="document.getElementById('touch-modal').style.display='block'">
+        <g class = "dim pointer" transform="translate(20 10)" onclick="document.getElementById('touch-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
           <text x = "-25", y="2" text-anchor="right" font-family="avenir" font-size="6" fill="black" font-weight="30">Touch</text>
           <image x="0" y="0" width="8" height="8" transform="translate(-4 -4)" xlink:href="img/touch.svg" />
         </g>
 
-        <g transform="translate(75 20)" onclick="document.getElementById('skin-modal').style.display='block'">
+        <g class = "dim pointer" transform="translate(75 20)" onclick="document.getElementById('skin-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
-          <text x = "10", y="2" text-anchor="right" font-family="avenir" font-size="6" fill="black" font-weight="30">Skin</text>
+          <text x = "10", y="2" text-anchor="right" font-family="avenir" font-size="6" fill="black" font-weight="30">Skin/Bone</text>
           <image x="0" y="0" width="8" height="8" transform="translate(-4 -4)" xlink:href="img/skin.svg" />
         </g>
 
-        <g transform="translate(20 70)" onclick="document.getElementById('energy-modal').style.display='block'">
+        <g class = "dim pointer" transform="translate(20 70)" onclick="document.getElementById('energy-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
           <text x = "10", y="2" text-anchor="right" font-family="avenir" font-size="6" fill="black" font-weight="30">Qi</text>
@@ -191,7 +192,7 @@
   <section class="avenir">
     <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Philosophical</h1>
     <div class="tc pa4 flex-l justify-center">
-      <div class = "ph3 pv3" onclick="document.getElementById('presence-modal').style.display='block'">
+      <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('presence-modal').style.display='block'">
         <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <g >
             <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
@@ -201,12 +202,12 @@
         <svg>
         <div class = "f2 fw3">Presence</div>
       </div>
-      <div class = "ph3 pv3" onclick="document.getElementById('layers-modal').style.display='block'">
+      <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('layers-modal').style.display='block'">
         <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <g >
             <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
             <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="8"/>
-            <image x="0" y="0" width="15" height="15" transform="translate(2.5 2.5)" xlink:href="img/layers.svg" />
+            <image x="0" y="0" width="15" height="15" transform="translate(2.5 2.66)" xlink:href="img/layers.svg" />
           </g>
         <svg>
         <div class = "f2 fw3">Layers</div>
@@ -221,7 +222,7 @@
 
   <section class="avenir bg-dark-gray white center pb5" id="id-about">
     <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">About</h1>
-    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> Prageeth Jayathissa is a scientist by day, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe. The goal is met, once one realises that there was never a goal.
+    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> Prageeth Jayathissa is an <a href="https://scholar.google.com/citations?hl=en&user=FYCGQnwAAAAJ" target = "_blank"> applied scientist by day</a>, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe. Prageeth is a Yoga Alliance certified yoga teacher under the guidance of <a href="https://www.satu.yoga/" target = "_blank"> Satu Tuomela</a>. 
 
     </div>
 
@@ -229,10 +230,33 @@
   </section>
 
   <section id = "id-talks">
-   <div class = "pv0">
-    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/468942270&color=%23742830&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-  </div>
+<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fmelodicdistraction%2Fanti-social-jazz-club-w-lee-fleming-joseph-kaye-may-17%2F" frameborder="0" ></iframe>
 </section>
+
+
+  <section class="avenir bg-white dark-gray center pb5" id="id-about">
+    <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Inspired Reading Material</h1>
+    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> 
+
+      <ul>
+        <li>Chuang Tzu - The Tao of Nature</li>
+        <li>Lao Tzu - Tao Te Ching</li>
+        <li>Prana and Pranayama - Swami Niranjanananda Saraswati</li>
+        <li>Tantra Illuminated - Christopher Wallis</li>
+        <li>Man's Search for Meaning - Viktor E. Frankl</li>
+        <li>Tuesdays with Morrie - Mitch Albom</li>
+        <li>Sapiens - Yuval Noah Harari</li>
+        <li>Thinking Fast and Slow - Daniel Kahneman</li>
+        <li>Doors of Perception - Aldous Huxley</li>
+        <li>Gut - Giulia Enders</li>
+        <li>And the countless works of scientific literature</li>
+
+      </ul>
+
+    </div>
+
+
+  </section>
 
 
 <section class="sans-serif bg-dark-gray white ">
@@ -249,132 +273,195 @@
 <!-- The Modals -->
 <div id="breath-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('breath-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">Breathing</p>
-      <p class = "f3">An interactive introductory lesson to breathwork and pranayama. We  </p>
+
+      <div class="flex items-center">
+        <img src="img/breath.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Breathing</p>
+      </div>
+      <p class = "f3"> Your lungs are not a muscle. This course is an interactive introduction to breath-work and pranayama. We explore the different muscles responsible for breathing, and explore the varying sensations felt through different breathing patterns.</p>
     </div>
   </div>
 </div>
 
 <div id="mind-body-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('mind-body-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">Mind-Body Connection</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/mind.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Mind-Body Connection</p>
+      </div>
+      <p class = "f3"> "The mind is like the wind, and the body is like the sand. If you want to know how the wind is blowing, you look at the sand" - Bonnie Bainbridge Cohen</p>
     </div>
   </div>
 </div>
 
 <div id="consciousness-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('consciousness-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">Realms of Consciousness</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/conscious.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Realms of Consciousness</p>
+      </div>
+      <p class = "f3">We spend most of our lives in "normal waking consciousness". The default mode best designed for survival. By bringing awareness to this as a single mode, we can start observing its deviation into alternative realms.</p>
+    </div>
+  </div>
+</div>
+
+<div id="yielding-modal" class="w3-modal vh-100">
+  <div class="w3-modal-content w3-animate-opacity br4">
+    <div class="h7 pa4">
+      <button onclick="document.getElementById('yielding-modal').style.display='none'"
+      class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
+
+      <div class="flex items-center">
+        <img src="img/yielding.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Yielding</p>
+      </div>
+      <p class = "f3">When values are challenged some people "prop", stiffen and hold their values without any movement. Some people "collapse" and surrender their values without any resistance. In between propping, and collapsing there is the concept of yielding. Where one listens to the outer stimuli, and responds with it to direct the best course of action. </p>
     </div>
   </div>
 </div>
 
 <div id="heart-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('heart-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">heart</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/heart.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3 ">Unrestricted Heart</p>
+      </div>
+      <p class = "f3">Imagine a liberated heart, free of all connection to material objects and living beings. Through this practice, we liberate the heart of all bounds, and through this liberation allow it to move, letting the body follow. </p>
     </div>
   </div>
 </div>
 
 <div id="kidneys-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('kidneys-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">kidneys</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/kidneys.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Kidneys</p>
+      </div>
+      <p class = "f3">When was the last time you felt your kidneys? In a painless way that is. </p>
     </div>
   </div>
 </div>
 
 <div id="touch-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('touch-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">touch</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/touch.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Touch</p>
+      </div>
+      <p class = "f3">Your skin is the boundary between the outside and in the in. This is an eyes closed class where you explore objects and space through the sense of touch as you physically journey from one location to another. </p>
     </div>
   </div>
 </div>
 
 <div id="space-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('space-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">space</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/space.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Space</p>
+      </div>
+      <p class = "f3"> As you move the body you also move the space that resides around your body. How do your movements change, when you think of the variation of the space on the outside, as opposed to the variation of the body on the inside? </p>
     </div>
   </div>
 </div>
 
 <div id="skin-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('skin-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">skin</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/skin.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Skin and Bone</p>
+      </div>
+      <p class = "f3"> Skin and Bone. Lightness and Strength. Flotation and Tether. The two contrasting elements that when in balance allows one to be light and free, while grounded and strong.  </p>
     </div>
   </div>
 </div>
 
 <div id="energy-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('energy-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">energy</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/energy.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Energy</p>
+      </div>
+      <p class = "f3">A TaiQi inspired class that uses spiral movements of the body to alleviate energetic moment. </p>
     </div>
   </div>
 </div>
 
 <div id="grounding-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('grounding-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">grounding</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/ground.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Grounding</p>
+      </div>
+      <p class = "f3">A bone focused class that explores weight and ones connection to the Earth. </p>
     </div>
   </div>
 </div>
 
 <div id="presence-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('presence-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">presence</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/time.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Presence</p>
+      </div>
+      <p class = "f3"> I feel that there is a misconception of presence as being in the "now" where one forgets about the future and the past. This I see as a spiritual bypass, as the past and the future are also both part of the present. This course explores the concept of presence through meditation, movement and after class discussions. </p>
     </div>
   </div>
 </div>
 
 <div id="layers-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('layers-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">layers</p>
-      <p class = "f3">Some text in the Modal..</p>
+
+      <div class="flex items-center">
+        <img src="img/layers.svg" class="br-100 dib ba b--black-10 h3 w3">
+        <p class = "f2 dib ml3">Layers</p>
+      </div>
+      <p class = "f3">The five layered self is a concept through of ancient Tantric Philosophy (not the modern Westernised neo-Tantra). Here we explore the five layers of oneself: the body, heart-mind, prana, void, and cit. </p>
     </div>
   </div>
 </div>
