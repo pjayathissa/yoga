@@ -170,7 +170,7 @@
         <g transform="translate(75 20)" onclick="document.getElementById('skin-modal').style.display='block'">
           <circle fill="#white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="0" cy="0" r="6"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="10" cx="0" cy="0" r="5"/>
-          <text x = "10", y="2" text-anchor="right" font-family="avenir" font-size="6" fill="black" font-weight="30">Skin</text>
+          <text x = "10", y="2" text-anchor="right" font-family="avenir" font-size="6" fill="black" font-weight="30">Skin/Bone</text>
           <image x="0" y="0" width="8" height="8" transform="translate(-4 -4)" xlink:href="img/skin.svg" />
         </g>
 
@@ -221,7 +221,7 @@
 
   <section class="avenir bg-dark-gray white center pb5" id="id-about">
     <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">About</h1>
-    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> Prageeth Jayathissa is a scientist by day, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe. The goal is met, once one realises that there was never a goal.
+    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> Prageeth Jayathissa is a <a href="https://scholar.google.com/citations?hl=en&user=FYCGQnwAAAAJ" target = "_blank"> scientist by day</a>, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe. 
 
     </div>
 
@@ -233,6 +233,31 @@
     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/468942270&color=%23742830&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
   </div>
 </section>
+
+
+  <section class="avenir bg-white dark-gray center pb5" id="id-about">
+    <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Inspired Reading Material</h1>
+    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> 
+
+      <ul>
+        <li>Chuang Tzu - The Tao of Nature</li>
+        <li>Lao Tzu - Tao Te Ching</li>
+        <li>Prana and Pranayama - Swami Niranjanananda Saraswati</li>
+        <li>Tantra Illuminiated - Christopher Wallis</li>
+        <li>Man's Search for Meaning - Viktor E. Frankl</li>
+        <li>Tuesdays with Morrie - Mitch Albom</li>
+        <li>Sapiens - Yuval Noah Harari</li>
+        <li>Thinking Fast and Slow - Daniel Kahneman</li>
+        <li>Doors of Perception - Aldous Huxley</li>
+        <li>Gut - Giulia Enders</li>
+        <li>And the countless works of scientific literature</li>
+
+      </ul>
+
+    </div>
+
+
+  </section>
 
 
 <section class="sans-serif bg-dark-gray white ">
@@ -249,132 +274,143 @@
 <!-- The Modals -->
 <div id="breath-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('breath-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
       <p class = "f2">Breathing</p>
-      <p class = "f3">An interactive introductory lesson to breathwork and pranayama. We  </p>
+      <p class = "f3"> Your lungs are not a muscle. This course is an interactive introduction to breathwork and pranayama. We explore the different muscles responsible for breathing, and explore the varying sensations felt through different breathing patterns.</p>
     </div>
   </div>
 </div>
 
 <div id="mind-body-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('mind-body-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
       <p class = "f2">Mind-Body Connection</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f3"> "The mind is like the wind, and the body is like the sand. If you want to know how the wind is blowing, you look at the sand" - Bonnie Bainbridge Cohen</p>
     </div>
   </div>
 </div>
 
 <div id="consciousness-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('consciousness-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
       <p class = "f2">Realms of Consciousness</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f3">We spend most of oue lives in "normal waking consciousness". The default mode best designed for survival. By bringing awareness to this as a single mode, we can start observing its deviation into alternative realms.</p>
+    </div>
+  </div>
+</div>
+
+<div id="yielding-modal" class="w3-modal vh-100">
+  <div class="w3-modal-content w3-animate-opacity br4">
+    <div class="h7 pa4">
+      <button onclick="document.getElementById('yielding-modal').style.display='none'"
+      class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
+      <p class = "f2">Yielding</p>
+      <p class = "f3">When values are challenged some people "prop", stiffen and hold their values without any movement. Some people "collapse" and surrender their values without any resistance. In between propping, and collapsing there is the concept of yielding. Where one listens to the outer stimuli, and responds with it to direct the best course of action. </p>
     </div>
   </div>
 </div>
 
 <div id="heart-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('heart-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">heart</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Unrestricted Heart</p>
+      <p class = "f3">Imagine a liberated heart, free of all connection to material objects and living beings. Through this practice, we liberate the heart of all bounds, and through this liberation allow it to move, letting the body follow. </p>
     </div>
   </div>
 </div>
 
 <div id="kidneys-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('kidneys-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">kidneys</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Kidneys</p>
+      <p class = "f3">When was the last time you felt your kidneys? In a painless way that is. </p>
     </div>
   </div>
 </div>
 
 <div id="touch-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('touch-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">touch</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Touch</p>
+      <p class = "f3">Your skin is the boundary between the outside and in the in. This is an eyes closed class where you explore objects and space through the sense of touch as you physically journey from one location to another. </p>
     </div>
   </div>
 </div>
 
 <div id="space-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('space-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">space</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Space</p>
+      <p class = "f3"> As you move the body you also move the space that resides around your body. How do your movements change, when you think of the variation of the space on the outside, as opposed to the variation of the body on the inside? </p>
     </div>
   </div>
 </div>
 
 <div id="skin-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('skin-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">skin</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Skin and Bone</p>
+      <p class = "f3"> Skin and Bone. Lightness and Strength. Floatation and Tether. The two contrasting elements that when in balance allows one to be light and free, while grounded and strong.  </p>
     </div>
   </div>
 </div>
 
 <div id="energy-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('energy-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">energy</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Energy</p>
+      <p class = "f3">A Tai Qi inspired class that uses spiral movements of the body to eleviate energetic moment. </p>
     </div>
   </div>
 </div>
 
 <div id="grounding-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('grounding-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">grounding</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Grounding</p>
+      <p class = "f3">A bone focussed class that explores weight and ones connection to the Earth. </p>
     </div>
   </div>
 </div>
 
 <div id="presence-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('presence-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">presence</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Presence</p>
+      <p class = "f3"> I feel that there is a misconception of presence as being in the "now" where one forgets about the future and the past. This I see as a spirtual bypass, as the past and the future are also both part of the present. This course explores the concept of presence through meditation, movement and after class discussions. </p>
     </div>
   </div>
 </div>
 
 <div id="layers-modal" class="w3-modal vh-100">
   <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h5 pa4">
+    <div class="h7 pa4">
       <button onclick="document.getElementById('layers-modal').style.display='none'"
       class="top-0 right-0 absolute bg-dark-gray white pa3 f3 br4"> &times; </button>
-      <p class = "f2">layers</p>
-      <p class = "f3">Some text in the Modal..</p>
+      <p class = "f2">Layers</p>
+      <p class = "f3">The five layered self is a concept through of ancient Tantric Philosophy (not the modern Westernised neo-Tantra). Here we explore the five layers of oneself: the body, heart-mind, prana, void, and cit. </p>
     </div>
   </div>
 </div>
