@@ -2,3 +2,11 @@ svg#embodied {
 	width:350px;
 	height:300px;
 }
+
+@media only screen and (min-width: 700px) {
+  svg#embodied {
+	width:700px;
+	height:600px;
+	}
+}
+
