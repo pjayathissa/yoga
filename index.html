@@ -24,6 +24,7 @@
 
   	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
   	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
 
   <!-- JS
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,7 +32,7 @@
 
   <!-- Favicon
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<link rel="icon" type="image/png" href="../../dist/images/favicon.ico">
+  	<link rel="icon" type="image/png" href="img/favicon.png">
 
   </head>
   <body>
@@ -48,7 +49,7 @@
   					<div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
   						<a class="link dim white f5 f3-l dib mr3 mr4-l" onclick="scrollSmoothly('#id-courses')" title="Home">Courses</a>
   						<a class="link dim white f5 f3-l dib mr3 mr4-l" onclick="scrollSmoothly('#id-about')" title="How it Works">About</a>
-  						<a class="link dim white f5 f3-l dib mr3 mr4-l" onclick="scrollSmoothly('#id-talks')" title="Blog">Thoughts</a>
+  						<a class="link dim white f5 f3-l dib mr3 mr4-l" onclick="scrollSmoothly('#id-talks')" title="Blog">Talks</a>
   						<a class="link dim white f5 f3-l dib" href="#" title="Contact"></a>
   					</div>
   				</nav> 
@@ -58,11 +59,11 @@
 
    <section class="avenir" id="id-courses">
 
-    <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Foundational</h1>
-    <div class="tc pa4 flex-l justify-center">
+    <h1 class=" tc f2 f1-ns fw2 mb0 lh-title ph4 pt4">Foundational</h1>
+    <div class="tc ph4 pb4 flex-l justify-center">
      <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('breath-modal').style.display='block'">
       <!-- <img src="img/heart.svg" class="br-100 pa1 ba b--black-10 h3 w3" alt="avatar"> -->
-      <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <svg id = "simple-circles" viewBox="0 0 20 20">
 
         <g >
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
@@ -70,37 +71,37 @@
           <image x="0" y="0" width="15" height="15" transform="translate(2.5 2)" xlink:href="img/breath.svg" />
         </g>
       <svg>
-      <div class = "f2 fw3">Breathing</div>
+      <div class = "f2-ns f4 fw3-ns">Breathing</div>
     </div>
     <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('mind-body-modal').style.display='block'">
-      <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <svg id = "simple-circles" viewBox="0 0 20 20">
         <g >
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="8"/>
           <image x="0" y="0" width="15" height="15" transform="translate(2.5 2)" xlink:href="img/mind.svg" />
         </g>
       <svg>
-          <div class = "f2 fw3">Mind-Body Connection</div>
+          <div class = "f2-ns f4 fw3-ns">Mind-Body Connection</div>
     </div>
     <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('consciousness-modal').style.display='block'">
-      <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <svg id = "simple-circles" viewBox="0 0 20 20">
         <g >
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="8"/>
           <image x="0" y="0" width="15" height="15" transform="translate(2.5 2)" xlink:href="img/conscious.svg" />
         </g>
       <svg>
-      <div class = "f2 fw3">Realms of Consciousness</div>
+      <div class = "f2-ns f4 fw3-ns">Realms of Consciousness</div>
     </div>
     <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('yielding-modal').style.display='block'">
-      <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <svg id = "simple-circles" viewBox="0 0 20 20">
         <g >
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
           <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="8"/>
           <image x="0" y="0" width="15" height="15" transform="translate(2.5 2)" xlink:href="img/yielding.svg" />
         </g>
       <svg>
-      <div class = "f2 fw3">Yielding</div>
+      <div class = "f2-ns f4 fw3-ns">Yielding</div>
     </div>
 
       </div>
@@ -109,12 +110,11 @@
 
 
     <section class="avenir" id="id-courses">
-      <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Embodied</h1>
-
+      <h1 class=" tc f2 f1-ns fw2 mb0 lh-title ph4 pt4">Embodied</h1>
 
 
       <div class = "pa3 tc">
-        <svg height="600" width="700" class = "white" viewBox="0 0 100 120" style="fill:currentcolor" xmlns="http://www.w3.org/2000/svg">
+        <svg class = "white" id = "embodied" viewBox="0 0 100 120" style="fill:currentcolor">
 
 
 
@@ -190,27 +190,27 @@
 
 
   <section class="avenir">
-    <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Philosophical</h1>
-    <div class="tc pa4 flex-l justify-center">
+    <h1 class=" tc f2 f1-ns fw2 mb0 lh-title ph4 pt4">Philosophical</h1>
+    <div class="tc ph4 pb4 flex-l justify-center">
       <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('presence-modal').style.display='block'">
-        <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <svg id = "simple-circles" viewBox="0 0 20 20">
           <g >
             <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
             <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="8"/>
             <image x="0" y="0" width="15" height="15" transform="translate(2.5 2.5)" xlink:href="img/time.svg" />
           </g>
         <svg>
-        <div class = "f2 fw3">Presence</div>
+        <div class = "f2-ns f4 fw3-ns">Presence</div>
       </div>
       <div class = "ph3 pv3 dim pointer" onclick="document.getElementById('layers-modal').style.display='block'">
-        <svg height = "100", width = "100" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <svg id = "simple-circles" viewBox="0 0 20 20">
           <g >
             <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="9"/>
             <circle fill="white" stroke="gray" stroke-width="0.2" stroke-miterlimit="5" cx="10" cy="10" r="8"/>
             <image x="0" y="0" width="15" height="15" transform="translate(2.5 2.66)" xlink:href="img/layers.svg" />
           </g>
         <svg>
-        <div class = "f2 fw3">Layers</div>
+        <div class = "f2-ns f4 fw3-ns">Layers</div>
       </div>
 
 
@@ -221,8 +221,8 @@
 
 
   <section class="avenir bg-dark-gray white center pb5" id="id-about">
-    <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">About</h1>
-    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> Prageeth Jayathissa is an <a href="https://scholar.google.com/citations?hl=en&user=FYCGQnwAAAAJ" target = "_blank"> applied scientist by day</a>, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe. Prageeth is a Yoga Alliance certified yoga teacher under the guidance of <a href="https://www.satu.yoga/" target = "_blank"> Satu Tuomela</a>. 
+    <h1 class=" tc f2 f1-ns fw2 mb0 lh-title pa4">About</h1>
+    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f4 f3-ns pv2"> Prageeth Jayathissa is an <a href="https://scholar.google.com/citations?hl=en&user=FYCGQnwAAAAJ" target = "_blank"> applied scientist by day</a>, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe. Prageeth is a Yoga Alliance certified yoga teacher under the guidance of <a href="https://www.satu.yoga/" target = "_blank"> Satu Tuomela</a>. 
 
     </div>
 
@@ -230,13 +230,13 @@
   </section>
 
   <section id = "id-talks">
-<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fmelodicdistraction%2Fanti-social-jazz-club-w-lee-fleming-joseph-kaye-may-17%2F" frameborder="0" ></iframe>
+<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FJayathissaYoga%2Fwhy-i-develop-technology-and-yoga%2F" frameborder="0" ></iframe>
 </section>
 
 
   <section class="avenir bg-white dark-gray center pb5" id="id-about">
-    <h1 class=" tc f1 f1-l fw2 mb0 lh-title pa4">Inspired Reading Material</h1>
-    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f3 pv2"> 
+    <h1 class=" tc f2 f1-ns fw2 mb0 lh-title pa4">Inspired Reading Material</h1>
+    <div class = "lh-copy ph3 ph3-m mh3-m ph7-l mh7-l f4 f3-ns pv2"> 
 
       <ul>
         <li>Chuang Tzu - The Tao of Nature</li>
@@ -279,9 +279,9 @@
 
       <div class="flex items-center">
         <img src="img/breath.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Breathing</p>
+        <p class = "f3 f2-ns dib ml3">Breathing</p>
       </div>
-      <p class = "f3"> Your lungs are not a muscle. This course is an interactive introduction to breath-work and pranayama. We explore the different muscles responsible for breathing, and explore the varying sensations felt through different breathing patterns.</p>
+      <p class = "f5 f3-ns"> Your lungs are not a muscle. This course is an interactive introduction to breath-work and pranayama. We explore the different muscles responsible for breathing, and explore the varying sensations felt through different breathing patterns.</p>
     </div>
   </div>
 </div>
@@ -294,9 +294,9 @@
 
       <div class="flex items-center">
         <img src="img/mind.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Mind-Body Connection</p>
+        <p class = "f3 f2-ns dib ml3">Mind-Body Connection</p>
       </div>
-      <p class = "f3"> "The mind is like the wind, and the body is like the sand. If you want to know how the wind is blowing, you look at the sand" - Bonnie Bainbridge Cohen</p>
+      <p class = "f5 f3-ns"> "The mind is like the wind, and the body is like the sand. If you want to know how the wind is blowing, you look at the sand" - Bonnie Bainbridge Cohen</p>
     </div>
   </div>
 </div>
@@ -309,9 +309,9 @@
 
       <div class="flex items-center">
         <img src="img/conscious.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Realms of Consciousness</p>
+        <p class = "f3 f2-ns dib ml3">Realms of Consciousness</p>
       </div>
-      <p class = "f3">We spend most of our lives in "normal waking consciousness". The default mode best designed for survival. By bringing awareness to this as a single mode, we can start observing its deviation into alternative realms.</p>
+      <p class = "f5 f3-ns">We spend most of our lives in "normal waking consciousness". The default mode best designed for survival. By bringing awareness to this as one of many modes, we can start observing its deviation into alternative realms.</p>
     </div>
   </div>
 </div>
@@ -324,9 +324,9 @@
 
       <div class="flex items-center">
         <img src="img/yielding.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Yielding</p>
+        <p class = "f3 f2-ns dib ml3">Yielding</p>
       </div>
-      <p class = "f3">When values are challenged some people "prop", stiffen and hold their values without any movement. Some people "collapse" and surrender their values without any resistance. In between propping, and collapsing there is the concept of yielding. Where one listens to the outer stimuli, and responds with it to direct the best course of action. </p>
+      <p class = "f5 f3-ns">When values are challenged some people "prop", stiffen and hold their values without any movement. Some people "collapse" and surrender their values without any resistance. In between propping, and collapsing there is the concept of yielding. Where one listens to the outer stimuli, and responds with it to direct the best course of action. </p>
     </div>
   </div>
 </div>
@@ -339,9 +339,9 @@
 
       <div class="flex items-center">
         <img src="img/heart.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3 ">Unrestricted Heart</p>
+        <p class = "f3 f2-ns dib ml3">Unrestricted Heart</p>
       </div>
-      <p class = "f3">Imagine a liberated heart, free of all connection to material objects and living beings. Through this practice, we liberate the heart of all bounds, and through this liberation allow it to move, letting the body follow. </p>
+      <p class = "f5 f3-ns"> Through this practice, we liberate the heart of all material and living bounds, and through this liberation allow it to move, letting the body follow. </p>
     </div>
   </div>
 </div>
@@ -354,9 +354,9 @@
 
       <div class="flex items-center">
         <img src="img/kidneys.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Kidneys</p>
+        <p class = "f3 f2-ns dib ml3">Kidneys</p>
       </div>
-      <p class = "f3">When was the last time you felt your kidneys? In a painless way that is. </p>
+      <p class = "f5 f3-ns">When was the last time you felt your kidneys? In a painless way that is. </p>
     </div>
   </div>
 </div>
@@ -369,9 +369,9 @@
 
       <div class="flex items-center">
         <img src="img/touch.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Touch</p>
+        <p class = "f3 f2-ns dib ml3">Touch</p>
       </div>
-      <p class = "f3">Your skin is the boundary between the outside and in the in. This is an eyes closed class where you explore objects and space through the sense of touch as you physically journey from one location to another. </p>
+      <p class = "f5 f3-ns">Your skin is the boundary between the outside and in the in. This is an eyes closed class where you explore objects and space through the sense of touch as you physically journey from one location to another. </p>
     </div>
   </div>
 </div>
@@ -384,9 +384,9 @@
 
       <div class="flex items-center">
         <img src="img/space.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Space</p>
+        <p class = "f3 f2-ns dib ml3">Space</p>
       </div>
-      <p class = "f3"> As you move the body you also move the space that resides around your body. How do your movements change, when you think of the variation of the space on the outside, as opposed to the variation of the body on the inside? </p>
+      <p class = "f5 f3-ns"> As you move the body you also move the space that resides around your body. How do your movements change, when you think of the variation of the space on the outside, as opposed to the variation of the body on the inside? </p>
     </div>
   </div>
 </div>
@@ -399,9 +399,9 @@
 
       <div class="flex items-center">
         <img src="img/skin.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Skin and Bone</p>
+        <p class = "f3 f2-ns dib ml3">Skin and Bone</p>
       </div>
-      <p class = "f3"> Skin and Bone. Lightness and Strength. Flotation and Tether. The two contrasting elements that when in balance allows one to be light and free, while grounded and strong.  </p>
+      <p class = "f5 f3-ns"> Skin and Bone. Lightness and Strength. Flotation and Tether. The two contrasting elements that when in balance allows one to be light and free, while grounded and strong.  </p>
     </div>
   </div>
 </div>
@@ -414,9 +414,9 @@
 
       <div class="flex items-center">
         <img src="img/energy.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Energy</p>
+        <p class = "f3 f2-ns dib ml3">Energy</p>
       </div>
-      <p class = "f3">A TaiQi inspired class that uses spiral movements of the body to alleviate energetic moment. </p>
+      <p class = "f5 f3-ns">A TaiQi inspired class that uses spiral movements of the body to alleviate energetic movement. </p>
     </div>
   </div>
 </div>
@@ -429,9 +429,9 @@
 
       <div class="flex items-center">
         <img src="img/ground.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Grounding</p>
+        <p class = "f3 f2-ns dib ml3">Grounding</p>
       </div>
-      <p class = "f3">A bone focused class that explores weight and ones connection to the Earth. </p>
+      <p class = "f5 f3-ns">A bone focused class that explores weight and ones connection to the Earth. </p>
     </div>
   </div>
 </div>
@@ -444,9 +444,9 @@
 
       <div class="flex items-center">
         <img src="img/time.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Presence</p>
+        <p class = "f3 f2-ns dib ml3">Presence</p>
       </div>
-      <p class = "f3"> I feel that there is a misconception of presence as being in the "now" where one forgets about the future and the past. This I see as a spiritual bypass, as the past and the future are also both part of the present. This course explores the concept of presence through meditation, movement and after class discussions. </p>
+      <p class = "f5 f3-ns"> I feel that there is a misconception of presence as being in the "now" where one forgets about the future and the past. This I see as a spiritual bypass, as the past and the future are also both part of the present. This course explores the concept of presence through meditation, movement and after class discussions. </p>
     </div>
   </div>
 </div>
@@ -459,9 +459,9 @@
 
       <div class="flex items-center">
         <img src="img/layers.svg" class="br-100 dib ba b--black-10 h3 w3">
-        <p class = "f2 dib ml3">Layers</p>
+        <p class = "f3 f2-ns dib ml3">Layers</p>
       </div>
-      <p class = "f3">The five layered self is a concept through of ancient Tantric Philosophy (not the modern Westernised neo-Tantra). Here we explore the five layers of oneself: the body, heart-mind, prana, void, and cit. </p>
+      <p class = "f5 f3-ns">The five layered self is a concept through of ancient Tantric Philosophy (not the modern Westernised neo-Tantra). Here we explore the five layers of oneself: the body, heart-mind, prana, void, and cit. </p>
     </div>
   </div>
 </div>

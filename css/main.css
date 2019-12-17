@@ -1,0 +1,25 @@
+svg#embodied {
+	width:350px;
+	height:300px;
+}
+
+@media only screen and (min-width: 700px) {
+  svg#embodied {
+	width:700px;
+	height:600px;
+	}
+}
+
+
+svg#simple-circles {
+	width:50px;
+	height:50px;
+}
+
+@media only screen and (min-width: 700px) {
+  svg#simple-circles {
+	width:70px;
+	height:70px;
+	}
+}
+
