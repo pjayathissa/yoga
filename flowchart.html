@@ -46,23 +46,61 @@
   <!-- Primary Page Layout
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
+ <h1 class=" tc f2 f1-ns fw2 lh-title pa4">Moral Flowcharts for Modern Yoga</h1>
 
   <article>
-  <a href="https://geo.itunes.apple.com/us/movie/primer/id536457427?at=1l3vqFJ&ct=1l3vqFJ&mt=6" class="fl w-50 w-25-l link overflow-hidden">
-    <div role="img" aria-label="Primer movie" class="grow aspect-ratio--4x6 " style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/primer.jpg) no-repeat center center; background-size: cover;"></div>
-  </a>
-  <a href="https://geo.itunes.apple.com/us/movie/the-big-short/id1061320456?at=1l3vqFJ&mt=6" class="fl w-50 w-25-l link overflow-hidden">
-    <div role="img" aria-label="The Big Short movie" class="grow aspect-ratio--4x6 " style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/the-big-short.jpg) no-repeat center center; background-size: cover;"></div>
-  </a>
-  <a href="https://geo.itunes.apple.com/us/movie/bottle-rocket/id315360821?at=1l3vqFJ&mt=6" class="fl w-50 w-25-l link overflow-hidden">
-    <div role="img" aria-label="Bottle Rocket movie" class="grow aspect-ratio--4x6 " style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/bottlerocket.jpg) no-repeat center center; background-size: cover;"></div>
-  </a>
-  <a href="https://geo.itunes.apple.com/us/movie/bottle-rocket/id315360821?at=1l3vqFJ&mt=6" class="fl w-50 w-25-l link overflow-hidden">
-    <div role="img" aria-label="Bottle Rocket movie" class="grow aspect-ratio--4x6 " style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/bottlerocket.jpg) no-repeat center center; background-size: cover;"></div>
-  </a>
+    <!--TODO: make a template and populate https://www.w3schools.com/TagS/tag_template.asp-->
+  <template>
+    <div class="fl w-50 w-25-l link overflow-hidden">
+      <img src="" alt="" onclick="document.getElementById('').style.display='block'" class = "dim pointer">
+    </div>
+  </template>
+
+  <div class="fl w-50 w-25-l link overflow-hidden">
+    <img src="book/png/idflowchart7.png" alt="Chakra Flowchart" onclick="document.getElementById('flowchart-chakra-modal').style.display='block'" class = "dim pointer">
+  </div>
+
+  <div class="fl w-50 w-25-l link overflow-hidden">
+    <img src="book/png/idflowchart8.png" alt="Spiritual Ego Flowchart" onclick="document.getElementById('flowchart-ego-modal').style.display='block'" class = "dim pointer">
+  </div>
+
+  <div class="fl w-50 w-25-l link overflow-hidden">
+    <img src="book/png/idflowchart9.png" alt="Sacred Symbols Flowchart" onclick="document.getElementById('flowchart-symbols-modal').style.display='block'" class = "dim pointer">
+  </div>
+
 
 </article>
+
+<!--Flowchart Modals-->
+<div id="flowchart-chakra-modal" class="w3-modal vh-100">
+  <div class="w3-modal-content w3-animate-opacity br4">
+    <div class="h7 pa4">
+      <div class="flex items-center">
+        <img src="book/png/idflowchart7.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="flowchart-ego-modal" class="w3-modal vh-100">
+  <div class="w3-modal-content w3-animate-opacity br4">
+    <div class="h7 pa4">
+      <div class="flex items-center">
+        <img src="book/png/idflowchart8.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="flowchart-symbols-modal" class="w3-modal vh-100">
+  <div class="w3-modal-content w3-animate-opacity br4">
+    <div class="h7 pa4">
+      <div class="flex items-center">
+        <img src="book/png/idflowchart9.png">
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- End Document
