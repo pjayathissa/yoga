@@ -1,108 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<meta charset="utf-8">
-  	<title>Moral Flowcharts for Modern Yoga</title>
-  	<meta name="description" content="Prageeth Jayathissa is an applied scientist by day, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe.">
-  	<meta name="author" content="Prageeth Jayathissa">
-
-  <!-- Mobile Specific Metas
-  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Sharing specific Metas
+  <head>
+    <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta property="og:image" content="https://github.com/pjayathissa/yoga-website/blob/master/img/banner_filter.jpg?raw=true">
-    <meta property="og:description" content="The goal of yoga is met, once one realises that there was never a goal">
-    <meta property="og:title" content="Jayathissa Yoga">
+    <meta charset="utf-8" />
+    <title>Moral Flowcharts for Modern Yoga</title>
+    <meta
+      name="description"
+      content="Prageeth Jayathissa is an applied scientist by day, yoga teacher by night. The classes are not your typical modern postural yoga, but rather a meditative journey into alternative states on consciousness to find something that words cannot describe."
+    />
+    <meta name="author" content="Prageeth Jayathissa" />
 
-  <!-- FONT
-  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
- 
+    <!-- Sharing specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta
+      property="og:image"
+      content="https://github.com/pjayathissa/yoga-website/blob/master/img/banner_filter.jpg?raw=true"
+    />
+    <meta
+      property="og:description"
+      content="The goal of yoga is met, once one realises that there was never a goal"
+    />
+    <meta property="og:title" content="Jayathissa Yoga" />
 
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <!-- CSS
-  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <!-- JS
-  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="js/main.js"></script>
+    <script src="js/flowcharts.js"></script>
 
-  <!-- Favicon
-  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<link rel="icon" type="image/png" href="img/favicon.png">
-
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
-  <body>
 
-  <!-- Primary Page Layout
-  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <body onload="showContent();">
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
- <h1 class=" tc f2 f1-ns fw2 lh-title pa4">Moral Flowcharts for Modern Yoga</h1>
+    <h1 class=" tc f2 f1-ns fw2 lh-title pa4">
+      Moral Flowcharts for Modern Yoga
+    </h1>
 
-  <article>
-    <!--TODO: make a template and populate https://www.w3schools.com/TagS/tag_template.asp-->
-  <template>
-    <div class="fl w-50 w-25-l link overflow-hidden">
-      <img src="" alt="" onclick="document.getElementById('').style.display='block'" class = "dim pointer">
+    <div class="tc">
+      <a
+        class="f6 link dim ba ph3 pv2 mb2 dib near-black tc"
+        href="book/moral flowcharts for modern yoga.pdf"
+        target="_blank"
+        download
+        >Download PDF</a
+      >
+      <a
+        class="f6 link dim ba ph3 pv2 mb2 dib near-black tc"
+        href="https://github.com/pjayathissa/yoga/issues"
+        target="_blank"
+        >Critique on Github</a
+      >
+      <a
+        class="f6 link dim ba ph3 pv2 mb2 dib near-black tc"
+        onclick="window.scrollTo(0,document.body.scrollHeight);"
+        >Distribute</a
+      >
     </div>
-  </template>
 
-  <div class="fl w-50 w-25-l link overflow-hidden">
-    <img src="book/png/idflowchart7.png" alt="Chakra Flowchart" onclick="document.getElementById('flowchart-chakra-modal').style.display='block'" class = "dim pointer">
-  </div>
+    <section id="poster-board">
+      <!--TODO: make a template and populate https://www.w3schools.com/TagS/tag_template.asp-->
+      <template id="poster-template">
+        <div class="fl w-50 w-25-l link overflow-hidden">
+          <img
+            src=""
+            alt=""
+            onclick="document.getElementById('').style.display='block'"
+            class="dim pointer poster-image"
+          />
+        </div>
+      </template>
+      <!--Flowchart Modals-->
+      <template id="modal-template">
+        <div id="" class="w3-modal vh-100 modal-div">
+          <div class="w3-modal-content w3-animate-opacity br4">
+            <div class="h7 pa4">
+              <div class="flex items-center">
+                <img src="" class="modal-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </section>
 
-  <div class="fl w-50 w-25-l link overflow-hidden">
-    <img src="book/png/idflowchart8.png" alt="Spiritual Ego Flowchart" onclick="document.getElementById('flowchart-ego-modal').style.display='block'" class = "dim pointer">
-  </div>
+  <section class="avenir center pb5" id="id-about">
+    
+    <div class = "lh-copy fl ph3 ph3-m mh3-m ph7-l f4 f3-ns pb2"> 
+      <h1 class=" w-100 fl f2 f1-ns fw2 mb0 pt4">Distribute</h1>
+      This book is open source and creative commons. If you wish to distribute a physical version of this book, contact your local book printing shop, send them the pdf, and print away. You may sell the book to cover your printing, transportation and administration costs, or as a fundraiser. 
+    </br>
+    </br>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License</a>.
 
-  <div class="fl w-50 w-25-l link overflow-hidden">
-    <img src="book/png/idflowchart9.png" alt="Sacred Symbols Flowchart" onclick="document.getElementById('flowchart-symbols-modal').style.display='block'" class = "dim pointer">
-  </div>
+
+    </div>
 
 
-</article>
+  </section>
 
-<!--Flowchart Modals-->
-<div id="flowchart-chakra-modal" class="w3-modal vh-100">
-  <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h7 pa4">
-      <div class="flex items-center">
-        <img src="book/png/idflowchart7.png">
+<section class="sans-serif bg-dark-gray white ">
+  <div class="fl w-100 ph1 bg-dark-gray white pa2">
+    <div class = "flex-ns items-center cf ph3 center">
+      <div class="fl ph4 tc tl-ns">
+        <small class="f6 db tc">2021 <b class="ttu">Jayathissa Yoga</b></small>
       </div>
     </div>
   </div>
-</div>
-
-<div id="flowchart-ego-modal" class="w3-modal vh-100">
-  <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h7 pa4">
-      <div class="flex items-center">
-        <img src="book/png/idflowchart8.png">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="flowchart-symbols-modal" class="w3-modal vh-100">
-  <div class="w3-modal-content w3-animate-opacity br4">
-    <div class="h7 pa4">
-      <div class="flex items-center">
-        <img src="book/png/idflowchart9.png">
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 
 
-<!-- End Document
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
