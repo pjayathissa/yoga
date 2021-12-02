@@ -3,7 +3,7 @@ function showContent() {
 
 
 
-  for (var ii = 7; ii <30; ii++) {
+  for (var ii = 9; ii <32; ii++) {
 
     var posterBoard = document.getElementById('poster-board')
 
